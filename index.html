@@ -7,7 +7,7 @@
   <body>
     <ons-page>
       <ons-toolbar>
-        <div class="center">ローカルチャット1</div>
+        <div class="center">ローカルチャット</div>
       </ons-toolbar>
       <div style="text-align: center;">
         <p>コメントを入力してください</p>
@@ -24,7 +24,6 @@
     <script src="js/react-onsenui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
     <script type="text/babel">
-  
       var CommentList = React.createClass({
           render: function() {
               var comments = this.props.comments.map(function(comment, index) {
@@ -72,8 +71,7 @@
                         <ons-col width="5%" align = "right">
                         </ons-col>
                         <ons-col align = "left">
-                          <ons-
-                          type="submit" onClick={this.handleSubmit}>add</ons-button>
+                          <ons-button type="submit" onClick={this.handleSubmit}>add</ons-button>
                         </ons-col>
                       </ons-row>
 　　                </form>
@@ -83,7 +81,6 @@
           }
       });
       ReactDOM.render(<CommentApp />, document.getElementById('container'));
-
     </script>
   </body>
 </html>
