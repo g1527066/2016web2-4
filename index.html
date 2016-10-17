@@ -71,7 +71,8 @@
                         <ons-col width="5%" align = "right">
                         </ons-col>
                         <ons-col align = "left">
-                          <ons-button type="submit" onClick={this.handleSubmit}>add</ons-button>
+                          <ons-
+                          type="submit" onClick={this.handleSubmit}>add</ons-button>
                         </ons-col>
                       </ons-row>
 　　                </form>
@@ -81,6 +82,18 @@
           }
       });
       ReactDOM.render(<CommentApp />, document.getElementById('container'));
+      <label class="switch">
+  <input type="checkbox" class="switch__input">
+  <div class="switch__toggle"></div>
+</label>
+<label class="switch">
+  <input type="checkbox" class="switch__input" checked>
+  <div class="switch__toggle"></div>
+</label>
+<label class="switch">
+  <input type="checkbox" class="switch__input" disabled>
+  <div class="switch__toggle"></div>
+</label>
     </script>
   </body>
 </html>
