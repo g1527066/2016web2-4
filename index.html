@@ -7,7 +7,7 @@
   <body>
     <ons-page>
       <ons-toolbar>
-        <div class="center">ローカルチャット</div>
+        <div class="center">ローカルチャット1</div>
       </ons-toolbar>
       <div style="text-align: center;">
         <p>コメントを入力してください</p>
@@ -24,18 +24,7 @@
     <script src="js/react-onsenui.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.38/browser.min.js"></script>
     <script type="text/babel">
-    <label class="switch">
-  <input type="checkbox" class="switch__input">
-  <div class="switch__toggle"></div>
-</label>
-<label class="switch">
-  <input type="checkbox" class="switch__input" checked>
-  <div class="switch__toggle"></div>
-</label>
-<label class="switch">
-  <input type="checkbox" class="switch__input" disabled>
-  <div class="switch__toggle"></div>
-</label>
+  
       var CommentList = React.createClass({
           render: function() {
               var comments = this.props.comments.map(function(comment, index) {
